@@ -301,7 +301,7 @@ plt.show()
 
     
 
-![png](https://raw.githubusercontent.com/Aluminio-visto/DataScience-ScikitLearn/master/output_15_0.png?raw=true, fig_crop=false)   
+![png](https://raw.githubusercontent.com/Aluminio-visto/DataScience-ScikitLearn/master/output_15_0.png?raw=true)   
 
 
 
