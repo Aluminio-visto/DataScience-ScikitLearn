@@ -975,7 +975,7 @@ plt.show()
 
 
     
-![png](output_46_0.png)
+![png](output_46_0.jpg)
     
 
 
@@ -1156,7 +1156,7 @@ print ("Classification report: \n", classification_report(y_test, yhat))
 
 
     
-![png](output_55_1.png)
+![png](output_55_1.jpg)
     
 
 
