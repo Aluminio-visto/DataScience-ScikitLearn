@@ -357,19 +357,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -506,19 +494,7 @@ df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -660,19 +636,7 @@ Feature.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -763,19 +727,7 @@ X[0:5]
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -892,9 +844,9 @@ dict(zip(unique, counts))
 #### Plotting features & labels
 
 Let's plot the three first column features: terms vs. age vs. Principal (the loan mount), and colour them differently if paidoff or not (labels).
-The aim of this exercise is to devise a classificator that accurately splits the two colour groups.
+The aim of this exercise is to devise a classificator (in this graph, a plane or curved surface) that accurately splits the two colour groups.
 
-There is a major concern in these kinds of applications: overfitting. When devising a classificator and training the machine, there is a big risk of training the machine so that it learns to split our ttraining data, not being able to make accurate predictions on real data. There are several strategies to avoid this overfitting, but they are out of the scope of this exercise.
+There is a major concern in these kinds of applications: overfitting. When devising a classificator and training the machine, there is a big risk of training the machine so well that it "learns" (in the graph, it draws a perfect curved surface separating all points) how to split all of our training data, however not being able to make accurate predictions when feeding new, actual data. There are several strategies to avoid this overfitting (Dropouts, Augmentation, Regularization...) but they are out of the scope of this exercise.
 
 
 ```python
@@ -916,11 +868,11 @@ plt.show()
 
 
     
-![png](output_36_0.png)
+![png](output_36_0.jpg)
     
 
 
-As you may see, there is no obvious plane that clearly splits the two populations, green and red. Thus, every classifier's prediction will have to assume an error rate.
+As you may see, there is no obvious plane or surface that might be able to split the two populations, green and red. Thus, every classifier's prediction will have to assume an error rate.
 
 ### 2. Pre-processing (V): Normalize Numerical values
 
@@ -972,7 +924,8 @@ In this kind of classification algorithm we try to assign our data points to a g
 That is, if a data point (in this case, a client's entry in the database) is represented in a multi-dimensional space, it will belong to group A 
 (e.g., Paidoff) if the closest point (the most similar client) belongs to A group. More neighbors are taken into account as k increases, but also computing time increases dramatically.
 
-
+![image](https://user-images.githubusercontent.com/77884314/125927597-a9d57e9a-545d-4a04-81b4-c529ec454459.png)
+(Image taken from datacamp.com)
 
 ```python
 #we can now launch the training, I'm going to use a range of different k (from 1 to 30) to optimize this parameter:
