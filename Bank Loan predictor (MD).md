@@ -46,17 +46,6 @@ Let's download the dataset:
 !wget -O loan_train.csv https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/loan_train.csv
 ```
 
-    --2021-07-15 23:07:56--  https://s3-api.us-geo.objectstorage.softlayer.net/cf-courses-data/CognitiveClass/ML0101ENv3/labs/loan_train.csv
-    Resolving s3-api.us-geo.objectstorage.softlayer.net (s3-api.us-geo.objectstorage.softlayer.net)... 67.228.254.196
-    Connecting to s3-api.us-geo.objectstorage.softlayer.net (s3-api.us-geo.objectstorage.softlayer.net)|67.228.254.196|:443... connected.
-    HTTP request sent, awaiting response... 200 OK
-    Length: 23101 (23K) [text/csv]
-    Saving to: ‘loan_train.csv’
-    
-    loan_train.csv      100%[===================>]  22.56K  --.-KB/s    in 0.01s   
-    
-    2021-07-15 23:07:56 (1.51 MB/s) - ‘loan_train.csv’ saved [23101/23101]
-    
 
 
 ### 3. Load Data From CSV File  
@@ -70,20 +59,6 @@ df.head()
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
