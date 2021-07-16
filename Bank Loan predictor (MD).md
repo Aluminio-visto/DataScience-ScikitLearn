@@ -316,7 +316,7 @@ plt.show()
 
 
     
-![png](output_16_0.png)
+![png](output_16_0.jpg)
 
     
 
@@ -341,7 +341,7 @@ plt.show()
 
 
     
-![png](output_18_0.png)
+![png](output_18_0.jpg)
     
 
 
