@@ -1363,4 +1363,4 @@ We have built 4 different classification models and tested them with a validatio
 | SVM                | 0.72    | 0.62     | NA      |
 | LogisticRegression | 0.74    | 0.63     | 0.59    |
 
-The metrics are not terrific, as 0.75 represents 1 in 4 flawed predictions, but that is understandable, as the dataset is not quite big, and also we might tweak the classification algorithms to get better statistics.
+The metrics are not terrific, as 0.75 represents 1 in 4 flawed predictions, but that is understandable, as the dataset is not quite big, and also we might tweak the parameters in the classification algorithms (e.g., tuning regularization, building deeper and richer networks) to get better statistics.
